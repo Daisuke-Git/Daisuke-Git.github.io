@@ -1,0 +1,268 @@
+@charset "UTF-8";
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.push-left {
+  float: left;
+}
+
+.push-right {
+  float: right;
+}
+
+body {
+  font-family: 'ヒラギノ角ゴ　pro W3','Hiragino Kaku Gothic Pro',"Open-Sans", sans-serif;
+  font-size: 14px;
+  transition: all  300ms ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+body .header {
+  width: 100%;
+  height: 100px;
+  background: #333;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 999;
+}
+body .header .logo {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 80px;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 100px;
+}
+body .header nav {
+  font-family: "Open Sans";
+}
+body .header nav .nav__items {
+  margin: 0;
+  padding: 0 15px;
+  list-style-type: none;
+  line-height: 100px;
+}
+body .header nav .nav__items .nav__item {
+  padding: 0;
+  margin: 0;
+}
+body .header nav .nav__items a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #999999;
+  padding: 0 10px;
+  margin: 0;
+}
+body .header nav .nav__items a:hover {
+  color: #FFF;
+}
+body .header nav .nav__items a.active {
+  color: #FFF;
+}
+body .container {
+  width: 100%;
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+body .container .section {
+  width: 100%;
+  padding: 250px 0 0 0;
+}
+body .container .section:nth-child(1) {
+  padding: 250px 0 50px 0;
+  position: relative;
+  top: -100px;
+}
+body .container .section__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+body .container .section__text {
+  font-size: 20px;
+  color: gray;
+}
+body .container .about {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container .about .about__icons {
+  max-width: 960px;
+  height: 200px;
+  margin: 50px auto 50px;
+}
+body .container .about .about__icons .about__icon {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  margin: 0 15px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-67.5px);
+  background: url("http://www.placecage.com/g/300/300");
+}
+body .container .about .about__icons .about__icon:nth-child(3) {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  margin: 0 15px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-135px);
+  background: url("http://www.placecage.com/g/300/300");
+}
+body .container .about .about__intro {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+}
+body .container .about .about__intro .about__name {
+  color: #333;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body .container .skill .skill__bars {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body .container .skill .skill__bars .skill__bar {
+  background: #8AC249;
+  width: 100%;
+  height: 50px;
+  margin: 0 0 10px 0;
+  text-align: left;
+  position: relative;
+  transition: all 3000ms ease-in-out;
+}
+body .container .skill .skill__bars .skill__bar:nth-child(odd) {
+  background: #7db53d;
+}
+body .container .skill .skill__bars .skill__bar .skill__name {
+  background: #333;
+  color: #FFF;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 50px;
+  height: 50px;
+  width: 150px;
+  z-index: 3;
+}
+body .container .skill .skill__bars .skill__bar .skill__data {
+  color: #333;
+  position: absolute;
+  right: 10px;
+  line-height: 50px;
+  display: inline-block;
+}
+@keyframes bar-1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes bar-2 {
+  0% {
+    width: 0%;
+  }
+  89% {
+    width: 89%;
+  }
+}
+@keyframes bar-3 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+}
+@keyframes bar-4 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes bar-5 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+body .container .skill .skill__bars .bar-1 {
+  width: calc(90% - 10px);
+  animation-name: bar-1;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+body .container .skill .skill__bars .bar-2 {
+  width: calc(89% + 10%);
+  animation-name: bar-2;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+body .container .skill .skill__bars .bar-3 {
+  width: calc(50% + 10%);
+  animation-name: bar-3;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+body .container .skill .skill__bars .bar-4 {
+  width: calc(60% + 10%);
+  animation-name: bar-4;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+body .container .skill .skill__bars .bar-5 {
+  width: calc(50% + 10%);
+  animation-name: bar-5;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+body .container .work .work__items {
+  width: 960px;
+  height: 500px;
+  margin: 0 auto;
+}
+body .container .work .work__items .work__item {
+  width: 220px;
+  height: 220px;
+  margin: 10px 10px;
+  background: url("http://www.placecage.com/g/200/200");
+}
+body .container .contact .contact__link {
+  text-decoration: none;
+  color: #333;
+  font-size: 50px;
+}
+body .container .contact .contact__link:hover {
+  color: #8AC249;
+}
+body .container .contact .contact__icons {
+  max-width: 960px;
+  margin: 50px auto 250px;
+}
+body .container .contact .contact__icons .contact__icon {
+  display: inline-block;
+  font-size: 35px;
+  text-decoration: none;
+  padding: 0 20px;
+  color: #333;
+}
