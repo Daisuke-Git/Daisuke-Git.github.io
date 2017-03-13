@@ -10,19 +10,19 @@ $accent-color: #8AC249;
 }
 
 .push-left{
-  
+
   float: left;
-  
+
 }
 
 .push-right{
-  
+
   float: right;
-  
+
 }
 
 body{
-  
+
   font-family:'ヒラギノ角ゴ　pro W3','Hiragino Kaku Gothic Pro',"Open-Sans", sans-serif;
   font-size: 14px;
   transition: all  300ms ease-in-out;
@@ -67,9 +67,9 @@ body{
 
             padding: 0;
             margin: 0;
-            
+
           }
-         
+
          a{
 
             display: inline-block;
@@ -89,9 +89,9 @@ body{
 
           } //a
         a.active{
-          
+
           color: $text-color;
-          
+
         }
 
       }
@@ -106,19 +106,19 @@ body{
     width: 100%;
     text-align: center;
     padding: 100px 0 0 0;
-    
+
     .section{
        width: 100%;
        padding: 250px 0 0 0;
        // background: pink;
-      
+
     }
     .section:nth-child(1){
-      
+
        padding: 250px 0 50px 0;
        position: relative;
        top: -100px;
-      
+
     }//section:nth-child
     .section__title{
 
@@ -129,10 +129,10 @@ body{
 
     }//section__title
     .section__text{
-      
+
       font-size: 20px;
       color: darken($secondary-color,10%);
-      
+
     }//section__text
 
     .about{
@@ -147,7 +147,7 @@ body{
           height: 200px;
           margin: 50px auto 50px;
           // background: pink;
-      
+
 
         .about__icon{
 
@@ -158,11 +158,11 @@ body{
           position: relative;
           top: 50%;
           transform:translateY(-67.5px);
-          background:url('http://www.placecage.com/g/300/300');
+          background:url('http://www.placecage.com/g/300/350');
 
         }//about__icon
         .about__icon:nth-child(3){
-          
+
           width: 270px;
           height: 270px;
           border-radius: 50%;
@@ -171,10 +171,16 @@ body{
           top: 50%;
           transform:translateY(-135px);
 
-          background:url('http://www.placecage.com/g/300/300');
-          
+          background:url('http://www.placecage.com/g/300/350');
+
         }
-        
+        .fa-laptop{
+
+          line-height: 135px;
+          font-size: 90px;
+
+        }
+
        }//about__icons
       .about__intro{
         width: 100%;
@@ -190,16 +196,16 @@ body{
       }//about__intro
     }//about
     .skill{
-      
+
       .skill__bars{
-        
+
         // background: pink;
-        
+
         max-width: 960px;
         margin: 0 auto;
         overflow: hidden;
         .skill__bar{
-      
+
           background: $accent-color;
           width: 100%;
           height: 50px;
@@ -208,14 +214,14 @@ body{
           position:relative;
           transition: all 3000ms ease-in-out;
           &:nth-child(odd){
-            
+
             background: darken($accent-color,5%);
-            
+
           }
-          
-          
+
+
          .skill__name{
-        
+
             background:$primary-color;
             color: $text-color;
             display: inline-block;
@@ -226,8 +232,8 @@ body{
             height: 50px;
             width: 150px;
             z-index: 3;
-            
-           
+
+
         }//skill__name
          .skill__data{
              color:$primary-color;
@@ -235,88 +241,88 @@ body{
              right: 10px;
              line-height: 50px;
              display: inline-block;
-           
+
           }//skill__data
          }//skill__bar
-        
+
         @keyframes bar-1{
-          
+
           0%{ width: 0%;}
           100%{ width: 100%;}
         }
-        
+
         @keyframes bar-2{
-          
+
           0%{ width: 0%;}
           89%{ width: 89%;}
         }
-        
+
         @keyframes bar-3{
-          
+
           0%{ width: 0%;}
           50%{ width: 50%;}
         }
-        
+
         @keyframes bar-4{
-          
+
           0%{ width: 0%;}
           100%{ width: 60%;}
         }
-        
+
         @keyframes bar-5{
-          
+
           0%{ width: 0%;}
           100%{ width: 50%;}
         }
-        
+
         .bar-1{
 
           width: calc(90% - 10px);
           animation-name: bar-1;
           animation-duration: 5s;
           animation-iteration-count: 1;
-          
+
         }
-        
+
          .bar-2{
 
           width: calc(89% + 10%);
           animation-name: bar-2;
           animation-duration: 5s;
           animation-iteration-count: 1;
-          
+
         }
-        
+
         .bar-3{
 
           width: calc(50% + 10%);
           animation-name: bar-3;
           animation-duration: 5s;
           animation-iteration-count: 1;
-          
+
         }
-        
+
         .bar-4{
-          
+
           width: calc(60% + 10%);
           animation-name: bar-4;
           animation-duration: 5s;
           animation-iteration-count: 1;
-          
+
         }
-        
+
         .bar-5{
-          
+
           width: calc(50% + 10%);
           animation-name: bar-5;
           animation-duration: 5s;
           animation-iteration-count: 1;
-          
+
         }
-        
-        
+
+
       } //skill__bars
-      
+
     }//skill
     .work{
       .work__items{
@@ -324,13 +330,13 @@ body{
         width: 960px;
         height: 500px;
         margin: 0 auto;
-      
+
           .work__item{
 
             width: 220px;
             height: 220px;
             margin: 10px 10px;
-            background:url('http://www.placecage.com/g/200/200');
+            background:url('http://fillmurray.com/g/200/360');
 
 
           }//work__item
@@ -339,41 +345,41 @@ body{
     }//work__items
     }//work
     .contact{
-      
+
       .contact__link{
-        
+
         text-decoration: none;
         color:$primary-color;
         font-size: 50px;
-        
+
         &:hover{
-        
+
         color:$accent-color;
-        
+
         }
       }//contact__link
-      
+
       .contact__icons{
-        
+
         // background: red;
         max-width: 960px;
         margin: 50px auto 250px;
-        
-        
+
+
         .contact__icon{
-          
+
           display: inline-block;
           font-size: 35px;
           text-decoration: none;
           padding: 0 20px;
           color:$primary-color;
-          
-          
-        }//contact__icon    
+
+
+        }//contact__icon
       } //contact__icons
     }//contact
 
   }//container
 
-  
+
 }//body
