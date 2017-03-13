@@ -153,11 +153,12 @@ body{
 
           width: 135px;
           height: 135px;
+          line-height: 135px;
           border-radius: 50%;
           margin: 0 15px;
           position: relative;
           top: 50%;
-          transform:translateY(-67.5px);
+          transform:translateY(-45px);
           background:url('http://www.placecage.com/g/300/350');
 
         }//about__icon
@@ -176,10 +177,15 @@ body{
         }
         .fa-laptop{
 
-          line-height: 135px;
+          font-size: 90px;
+
+        }//fa-laptop
+        .fa-bolt{
+
           font-size: 90px;
 
         }
+
 
        }//about__icons
       .about__intro{
