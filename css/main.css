@@ -28,6 +28,8 @@
 .preload__logo{
 
   color: #FFF;
+  font-size: 23px;
+  text-transform: uppercase;
   text-align: center;
   display: block;
   position: relative;

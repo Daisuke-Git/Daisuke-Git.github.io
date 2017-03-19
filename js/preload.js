@@ -15,7 +15,7 @@
       clearInterval(loadRep);
 
       var opVal = 1;
-      var opRep = setInterval(opDec,50);
+      var opRep = setInterval(opDec,20);
 
           console.log(opVal);
 
@@ -33,7 +33,7 @@
               if(opVal > 0){
 
                 preload.style.opacity = opVal;
-                opVal = opVal - 0.1;
+                opVal = opVal - 0.01;
                 console.log(opVal);
 
               }
