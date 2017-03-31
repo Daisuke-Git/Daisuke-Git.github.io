@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,400,800" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-  <script
+  <!-- <script
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> -->
 
 </head>
 
 <body>
-  <div class="preload" id="preload">
-    <div class="preload__logo" id="preload__logo">Loading...</div>
-  </div>
+    <div class="preload" id="preload">
+      <div class="preload__logo" id="preload__logo">Loading...</div>
+    </div>
     <header class="header">
         <h1 class="logo push-right">DS</h1>
-        <nav class="nav">
-            <ul class="nav__items">
+        <nav class="nav" id="nav">
+            <ul class="nav__items" id="nav__items">
                 <li class="nav__item push-left"><a href="#about" class="active">About ME</a></li>
                 <li class="nav__item push-left">
                   <a href="#skill">Skill</a>
@@ -131,6 +131,10 @@
             <!--skill__bars-->
     </main>
     <script src =js/preload.js></script>
+    <!-- <script src =js/function.js></script> -->
+    <script src =js/makeActive.js></script>
+    <script src =js/smoothScroll.js></script>
+    <!-- <script src =js/makeActive.js></script> -->
 </body>
 
 </html>

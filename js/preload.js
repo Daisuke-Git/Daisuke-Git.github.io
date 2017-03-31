@@ -1,12 +1,35 @@
-(function(){
 
+"use strict";
+
+window.addEventListener('load',function(){
+
+    // var preload = document.getElementById('preload');
+    // document.body.removeChild(preload);
+
+
+function load(){
+
+  window.addEventListener("load", function(){
+    var preload = document.getElementById("preload");
+    document.body.removeChild("preload");
+
+  });
+
+
+}
+
+window.onload = load();
+
+
+
+(function(){
 
   var preload = document.getElementById('preload');
   var loadLogo = document.getElementById('preload__logo');
   var loadVal = 0
-  var loadRep = setInterval(loadSet,20);
+  var loadRep = setInterval(loadSet,4);
 
-  console.log('hi');
+  // console.log('hi');
 
   function loadSet(){
 
@@ -17,7 +40,7 @@
       var opVal = 1;
       var opRep = setInterval(opDec,20);
 
-          console.log(opVal);
+          // console.log(opVal);
 
           function opDec(){
 
@@ -34,7 +57,7 @@
 
                 preload.style.opacity = opVal;
                 opVal = opVal - 0.01;
-                console.log(opVal);
+                // console.log(opVal);
 
               }
 
@@ -50,7 +73,7 @@
       if(loadVal < 100){
 
         loadVal = loadVal + 1;
-        console.log(loadVal);
+        // console.log(loadVal);
 
       }
 
@@ -59,3 +82,6 @@
   }
 
 })();
+
+
+});
